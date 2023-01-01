@@ -1,0 +1,196 @@
+@use '../abstracts' as *;
+@use '../layouts' as *;
+@use '../base' as *;
+
+.footer {
+  background: $footer-bg-color;
+  // .footer__container
+
+  &__container {
+    padding-top: 5.4rem;
+    @include tablet {
+      min-height: 25rem;
+      @include flexDirection(row);
+      column-gap: 4rem;
+      justify-content: space-between;
+    }
+    @include laptop {
+      min-height: 27rem;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    @include flexDirection(column);
+    color: $white-color;
+    margin-bottom: 2rem;
+  }
+
+  // .footer__icon
+
+  &__icon {
+    width: 136px;
+    height: 37px;
+    margin-bottom: 2.5rem;
+  }
+
+  // .footer__text
+
+  &__text {
+    line-height: 1.8;
+  }
+}
+
+//  Footer Header
+.footer__header {
+  flex: 1 1 auto;
+}
+
+// Footer Header Casket
+.footer__header--casket {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  @include laptop {
+    justify-content: flex-end;
+    column-gap: 3rem;
+  }
+}
+
+.footer {
+  // .footer__header--col
+
+  &__header--col {
+    @include transition-ease;
+    &.active .footer__col--head::after {
+      transform: rotate(0);
+      color: $primary-color;
+    }
+    &.active .footer__col--head {
+      color: $primary-color;
+      @include transition-ease;
+    }
+  }
+
+  // .footer__col--head
+
+  &__col--head {
+    @include transition-ease;
+    background: none;
+    border: none;
+    color: $white-color;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: map-get($font-weights, bold);
+    margin-bottom: 1rem;
+    position: relative;
+
+    &::after {
+      @include transition-ease;
+      color: $white-color;
+      content: '\f107';
+      cursor: pointer;
+      font-family: 'Font Awesome 6 Free';
+      font-size: 1.7rem;
+      font-weight: 900;
+      margin-left: 0.4rem;
+      position: absolute;
+      top: 1px;
+      transform: rotate(-90deg);
+    }
+    @include tablet {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // .footer__header--nav
+
+  &__header--nav {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    @include transition-ease;
+  }
+
+  // .footer__item
+
+  &__item {
+    margin-bottom: 1rem;
+
+    @include tablet {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include tablet {
+    .footer__header--nav > .footer__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    @include transition-ease;
+    color: $white-color;
+    &:hover,
+    &:focus {
+      color: $nav-link-color;
+    }
+  }
+}
+.active .footer__header--nav {
+  max-height: 100%;
+  opacity: 1;
+  @include transition-ease;
+}
+
+.nav--follow {
+  @include flexDirection(row);
+  @include tablet {
+    justify-content: space-between;
+  }
+}
+
+.nav--follow > .footer__item {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  @include tablet {
+    font-size: 1.8rem;
+    margin-right: 0;
+  }
+  @include laptop {
+    flex: 1 1 auto;
+    font-size: 2rem;
+  }
+}
+.nav--follow > .linkedin--in {
+  margin-right: 0;
+}
+
+/* Footer Bottom */
+.footer__bottom {
+  border-top: 2px solid $nav-link-color;
+}
+.footer__casket {
+  padding: 1.5rem 0;
+  min-height: 8.5rem;
+  @include flexDirection(row);
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  align-items: center;
+  color: $white-color;
+  @include tablet {
+    justify-content: space-between;
+  }
+}
+.footer__casket > p {
+  margin: 0;
+  align-self: center;
+}
+.footer__bottom--link {
+  color: $white-color;
+}

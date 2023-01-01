@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.circular__progress {
+  position: relative;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background-color: $neutral-color;
+  display: grid;
+  place-items: center;
+}
+.circular__progress::before {
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  background-color: $white-color;
+  border-radius: 50%;
+}
+.circular__value {
+  position: relative;
+  font-family: 'EuropaNuova';
+  font-size: 2.7rem;
+  color: $lucky-color;
+}
