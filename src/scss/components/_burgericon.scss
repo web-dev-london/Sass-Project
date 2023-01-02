@@ -1,4 +1,6 @@
 @use '../abstracts' as *;
+@use '../base' as *;
+@use '../layouts' as *;
 
 // .menu-btn {
 //   margin: 10rem;
@@ -73,6 +75,9 @@
     background: $nav-link-color;
     border-radius: 5px;
     @include transition-ease;
+  }
+  @include tablet {
+    display: none;
   }
 }
 

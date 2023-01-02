@@ -56,10 +56,13 @@ a {
 img,
 picture,
 video,
-canvas,
-svg {
+canvas {
   display: block;
   max-width: 100%;
+}
+
+svg {
+  width: 100%;
 }
 /*
   7. Remove built-in form typography styles

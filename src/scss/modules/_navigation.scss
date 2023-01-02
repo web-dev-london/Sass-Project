@@ -1,0 +1,124 @@
+@use '../abstracts' as *;
+@use '../components' as *;
+@use '../layouts' as *;
+@use '../base' as *;
+
+.header {
+  @include tablet {
+    background: $bg-color;
+  }
+}
+
+.header__container {
+  @include flexDirection(row);
+  // padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    padding-top: 2.6rem;
+  }
+}
+
+// Header Logo
+.header__icon {
+  width: 110px;
+  height: 35px;
+  transform: translateY(0.5rem);
+  @include tablet {
+    width: 136px;
+  }
+}
+// Navigation Bar
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+  @include tablet {
+    visibility: visible;
+    position: relative;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: $bg-color;
+  transform: translateY(-100%);
+  @include transition-ease;
+
+  &.open {
+    transform: translateY(0);
+  }
+  @include tablet {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(0);
+    height: 100%;
+    text-align: right;
+    background: transparent;
+  }
+}
+
+.nav__item {
+  margin-bottom: 1rem;
+  transform: translateX(100vw);
+  @include transition-ease;
+
+  &.open {
+    transform: translateX(0);
+  }
+  @include tablet {
+    transform: translateX(0);
+    margin-bottom: 0;
+  }
+}
+@include tablet {
+  .nav__item:nth-child(-n + 3) {
+    margin-right: 2rem;
+  }
+}
+
+.nav__item.active > a {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  color: $nav-link-color;
+  border-radius: $btn-radius;
+  font-size: 1.8rem;
+  font-weight: weight(medium);
+  text-transform: capitalize;
+  @include transition-ease;
+  &:hover {
+    background-color: $primary-color;
+    color: $white-color;
+  }
+
+  @include laptop {
+    padding: 1rem 2.2rem;
+  }
+  @include laptopX {
+    padding: 1.4rem 3.2rem;
+  }
+}
+
+@for $i from 1 through 4 {
+  .nav__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
+  }
+}
