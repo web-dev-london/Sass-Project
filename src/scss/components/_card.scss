@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../layouts' as *;
+
+/* Card */
+
+.card {
+  // card__grid
+  &__grid {
+    gap: 2rem;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  // .card__casket
+
+  &__casket {
+    position: relative;
+    max-width: 53.8rem;
+    min-height: 53rem;
+    padding: 0rem 2rem 0 5rem;
+    border-radius: $card-radius;
+    border: 1px solid rgba(15, 8, 9, 0.1);
+  }
+
+  &__header,
+  &__sub {
+    text-align: center;
+  }
+
+  // card__header
+  &__header {
+    font-size: 4.4rem;
+    color: $secondary-color;
+  }
+  // card__sub
+  &__sub {
+    color: $text-color;
+    margin-bottom: 5.5rem;
+    @include tablet {
+      margin-bottom: 6.5rem;
+    }
+    @include laptop {
+      margin-bottom: 7.5rem;
+    }
+    @include laptopX {
+      margin-bottom: 9.5rem;
+    }
+  }
+
+  // .card__icon
+
+  &__icon {
+    max-width: 221px;
+  }
+
+  // .card__title
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  // .card__img
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+.card__btn {
+  text-transform: capitalize;
+  position: relative;
+}
+.card__btn::before {
+  position: absolute;
+  content: '\f178';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  left: 6%;
+  cursor: pointer;
+  @include transition-ease;
+}

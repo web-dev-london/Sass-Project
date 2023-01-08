@@ -2,6 +2,10 @@
 @use '../abstracts' as *;
 @use '../layouts/mediaqueries' as *;
 
+[class*='__grid'] {
+  display: grid;
+}
+
 // Base 12 layouts
 $grid-columns: 12;
 
