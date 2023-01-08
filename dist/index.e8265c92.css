@@ -901,4 +901,69 @@ span:nth-of-type(3) {
   transition-delay: .55s;
 }
 
+.badge {
+  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
+  padding: 3.8rem 0;
+}
+
+@media (min-width: 768px) {
+  .badge {
+    padding: 5.3rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .badge {
+    padding: 7.3rem 0;
+  }
+}
+
+.badge__grid {
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .badge__grid {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+
+.badge__description {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .badge__description {
+    text-align: left;
+  }
+}
+
+.badge__head {
+  color: #1a2578;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .badge__head {
+    margin-bottom: 1.6rem;
+    font-size: 3.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .badge__head {
+    font-size: 4.4rem;
+  }
+}
+
+.badge__subtitle {
+  color: #484c63;
+}
+
+.badge__img {
+  max-width: 56rem;
+}
+
 /*# sourceMappingURL=index.e8265c92.css.map */
