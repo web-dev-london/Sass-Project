@@ -8,11 +8,12 @@
     "build": "parcel build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Murod Akhmedov",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "latest",
     "sass": "latest"
-  }
+  },
+  "dependencies": {}
 }

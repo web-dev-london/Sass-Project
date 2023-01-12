@@ -6,28 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Scss link -->
     <link rel="stylesheet" href="/index.e8265c92.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Sass Project</title>
   </head>
   <body>
-    <!-- Features Section -->
-    <section class="features">
-      <div class="features__container">
-        <div class="features__grid">
-          <div class="features__description">
-            <h4 class="features__head">Let's build the next big thing!</h4>
-            <p class="features__subtitle">Looking to achieve great things?
-              You've come to the right place.</p>
-            <a href="/index.html" class="btn btn--primary features__btn">Join the
-              team</a>
+    <!-- Slider Section -->
+    <section class="slider">
+      <div class="slider__container">
+        <div class="slider__header">
+          <h6 class="slider__head">Making waves with innovation</h6>
+          <p class="slider__description">We are in the news for being market
+            leaders who deliver exceptional products.</p>
+        </div>
+        <!-- Sliders -->
+        <div class="swiper">
+          <ul role="list" class="swiper__casket swiper-wrapper">
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="/sprite-2.19f95f55.svg#smashing"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="/sprite-2.19f95f55.svg#css"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="/sprite-2.19f95f55.svg#logonav"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="/sprite-2.19f95f55.svg#webtoffee"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="/sprite-2.19f95f55.svg#cookieyes"></use>
+              </svg></li>
+          </ul>
+          <!-- Pagination  -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- Swiper Buttons -->
+          <div class="swiper__btn">
+            <button class="btn btn__swiper--left swiper-button-prev"><i class="fa-solid
+                fa-arrow-left"></i></button>
+            <button class="btn btn__swiper--right swiper-button-next"><i class="fa-solid
+                fa-arrow-right"></i></button>
           </div>
-          <!-- Badge Image -->
-          <div class="features__img"><img src="/card--4.2dd1ee3e.png" alt="Image of
-              Features"></div>
         </div>
       </div>
     </section>
     <script src="/index.59a40e7a.js" defer=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>const swiper = new Swiper(".swiper", {
+    pagination: {
+        el: ".swiper-pagination"
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    // Breakpoint
+    breakpoints: {
+        530: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        }
+    }
+});
+
+</script>
   </body>
 </html>

@@ -6,6 +6,8 @@
 //   '.circular__value',
 // );
 
+const { default: Swiper } = require('swiper');
+
 // let progressValue = 0;
 // let progressEndValue = 95;
 // let speed = 175;
@@ -72,3 +74,5 @@ collapse.forEach((items) => {
 // acc.onclick = function () {
 //   content.classList.toggle('active');
 // };
+
+/* Swiper JS */
