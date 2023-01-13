@@ -19,33 +19,56 @@
     <title>Sass Project</title>
   </head>
   <body>
-    <!-- Header and Navbar -->
-    <header class="header">
-      <div class="header__container ">
-        <!-- Header logo -->
-        <a href="index.html" class="header__logo">
-          <svg class="header__icon icon">
-            <use xlink:href="./icons/sprite-2.svg#logonav"></use>
-          </svg>
-        </a>
-        <!-- Header Nav -->
-        <nav class="nav">
-          <ul role="list" class="nav__list">
-            <li class="nav__item "><a href="#" class="nav__link">Product</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            <li class="nav__item active"><a href="#" class="nav__link">We're
-                Hiring</a></li>
+    <!-- Slider Section -->
+    <section class="slider">
+      <div class="slider__container">
+        <div class="slider__header">
+          <h6 class="slider__head">Making waves with innovation</h6>
+          <p class="slider__description">We are in the news for being market
+            leaders who deliver exceptional products.</p>
+        </div>
+        <!-- Sliders -->
+        <div class="swiper">
+          <ul role="list" class="swiper__casket swiper-wrapper">
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="./icons/sprite-2.svg#smashing"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="./icons/sprite-2.svg#css"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="./icons/sprite-2.svg#logonav"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="./icons/sprite-2.svg#webtoffee"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="./icons/sprite-2.svg#cookieyes"></use>
+              </svg></li>
+            <li class="swiper__item swiper-slide"><svg class="icon
+                swiper--icon">
+                <use xlink:href="./icons/sprite-2.svg#glassdoor"></use>
+              </svg></li>
           </ul>
-        </nav>
-        <!-- Menu button -->
-        <div type="button" class="menu-btn">
-          <span class="burger--btn"></span>
-          <span class="burger--btn"></span>
-          <span class="burger--btn"></span>
+          <!-- Pagination  -->
+          <div class="swiper-pagination"></div>
+          <!-- Swiper Buttons -->
+          <div class="swiper__btn">
+            <button class="btn btn__swiper--left swiper-button-prev"><i
+                class="fa-solid
+                fa-arrow-left"></i></button>
+            <button class="btn btn__swiper--right swiper-button-next"><i
+                class="fa-solid
+                fa-arrow-right"></i></button>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
     <script type="module" src="/src/js/app.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"
@@ -54,7 +77,9 @@
     <script>
         const swiper = new Swiper('.swiper',{
           pagination:{
-            el: '.swiper-pagination'
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
           },
             // Navigation arrows
           navigation: {
