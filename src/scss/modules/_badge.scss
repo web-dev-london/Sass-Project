@@ -3,6 +3,7 @@
 @use '../layouts' as *;
 
 .badge {
+  margin-bottom: 12rem;
   background: $bg-color;
   padding: 3.8rem 0;
   @include tablet {

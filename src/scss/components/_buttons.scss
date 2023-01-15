@@ -23,3 +23,9 @@
     color: $white-color;
   }
 }
+
+.btn--active {
+  @extend %btn;
+  background: $primary-color;
+  color: $white-color;
+}

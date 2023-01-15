@@ -1,0 +1,71 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../layouts' as *;
+
+.hero {
+  padding-top: 7.3rem;
+  background: $bg-color;
+  // .hero__grid
+
+  &__grid {
+    @include tablet {
+      place-items: center;
+      column-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // .hero__body
+
+  &__body {
+    text-align: center;
+    @include tablet {
+      text-align: start;
+    }
+  }
+
+  // .hero__head
+
+  &__head {
+    color: $secondary-color;
+    line-height: 1.3;
+    margin-bottom: 3.2rem;
+  }
+
+  // .hero__title
+
+  &__title {
+    color: $text-color;
+    margin-bottom: 4rem;
+  }
+
+  // .hero__btn
+
+  &__btn {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    @include mobileX {
+      flex-flow: row nowrap;
+      column-gap: 1.6rem;
+    }
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  // .hero__btn--learn
+
+  &__btn--learn {
+    margin-bottom: 2rem;
+    @include mobileX {
+      margin-bottom: auto;
+    }
+  }
+
+  // .hero__img
+
+  &__img {
+    max-width: 63rem;
+  }
+}

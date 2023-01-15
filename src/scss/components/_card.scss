@@ -5,6 +5,7 @@
 /* Card */
 
 .card {
+  margin-bottom: 10rem;
   // card__grid
   &__grid {
     gap: 2rem;
@@ -30,7 +31,8 @@
 
   // card__header
   &__header {
-    font-size: 4.4rem;
+    line-height: 1.2;
+    font-size: 3.2rem;
     color: $secondary-color;
   }
   // card__sub
@@ -77,7 +79,10 @@
   content: '\f178';
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
-  left: 6%;
+  left: 5%;
   cursor: pointer;
   @include transition-ease;
+  @include laptop {
+    left: 3%;
+  }
 }

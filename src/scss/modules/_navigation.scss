@@ -4,14 +4,12 @@
 @use '../base' as *;
 
 .header {
-  @include tablet {
-    background: $bg-color;
-  }
+  background: $bg-color;
 }
 
 .header__container {
   @include flexDirection(row);
-  // padding-top: 1rem;
+  padding-top: 1rem;
   align-items: center;
   justify-content: space-between;
   @include tablet {
@@ -53,7 +51,7 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background: $bg-color;
+  background: #e4e8f6;
   transform: translateY(-100%);
   @include transition-ease;
 

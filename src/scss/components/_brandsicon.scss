@@ -5,8 +5,17 @@
 // Brands icons
 
 .brands--name {
-  margin: 2rem 0;
+  margin: 6rem 0 7rem 0;
+  @include laptop {
+    margin-bottom: 9rem;
+  }
 
+  @include tablet {
+    margin-top: 7rem;
+  }
+  @include laptop {
+    margin-top: 10rem;
+  }
   // .brands--name__title
 
   &__title {

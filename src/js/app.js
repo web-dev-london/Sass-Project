@@ -6,7 +6,7 @@
 //   '.circular__value',
 // );
 
-const { default: Swiper } = require('swiper');
+// const { default: Swiper } = require('swiper'); /* Fixme:  Find out and possibly remove  it  */
 
 // let progressValue = 0;
 // let progressEndValue = 95;
@@ -74,5 +74,3 @@ collapse.forEach((items) => {
 // acc.onclick = function () {
 //   content.classList.toggle('active');
 // };
-
-/* Swiper JS */

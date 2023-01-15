@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Scss link -->
+    <link rel="stylesheet" href="/src/scss/style.scss">
+    <!-- Swiper JS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
+      integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome-->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sass Project</title>
+  </head>
+  <body>
+    <!-- Product Hero -->
+    <div class="hero-1">
+      <div class="hero-1__container">
+        <div class="hero-1__grid">
+          <div class="hero-1__body">
+            <h1 class="hero-1__head">Tools that transform how businesses work</h1>
+            <p class="hero-1__title">We help manage businesses better with our
+              appllications, plugins, extensions and offer productive
+              experiences for teams and customers alike.</p>
+          </div>
+          <!-- Hero-1 image -->
+          <div class="hero-1__image">
+            <img src="./img/hero--2.svg" alt="Heroes Pictures"
+              class="hero-1__img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/js/app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"
+      integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const swiper = new Swiper('.swiper',{
+          pagination:{
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+          },
+            // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          // Breakpoint
+          breakpoints: {
+          530: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+        });
+      </script>
+  </body>
+</html>

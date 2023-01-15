@@ -21,8 +21,12 @@
 @use './modules/badge';
 @use './modules/features';
 @use './modules/slider';
+@use './modules/hero';
 
 // Layouts
 @use './layouts/container';
 @use './layouts/grid';
 @use './layouts/mediaqueries';
+
+// Pages
+@use './pages/product';

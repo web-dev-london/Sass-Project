@@ -8,14 +8,14 @@ $breakpoints: (
   'laptopXL': 1440px,
 );
 
-@mixin mobileXL {
-  @media (min-width: map.get($breakpoints, mobileXL)) {
+@mixin mobileX {
+  @media (min-width: map.get($breakpoints, mobileX)) {
     @content;
   }
 }
 
-@mixin mobileX {
-  @media (min-width: map.get($breakpoints, mobileX)) {
+@mixin mobileXL {
+  @media (min-width: map.get($breakpoints, mobileXL)) {
     @content;
   }
 }
