@@ -19,8 +19,35 @@
     <title>Sass Project</title>
   </head>
   <body>
+    <!-- Header and Navbar -->
+    <header class="header">
+      <div class="header__container ">
+        <!-- Header logo -->
+        <a href="index.html" class="header__logo">
+          <svg class="header__icon icon">
+            <use xlink:href="./icons/sprite-2.svg#logonav"></use>
+          </svg>
+        </a>
+        <!-- Header Nav -->
+        <nav class="nav">
+          <ul role="list" class="nav__list">
+            <li class="nav__item "><a href="#" class="nav__link">Product</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item active"><a href="#" class="nav__link">We're
+                Hiring</a></li>
+          </ul>
+        </nav>
+        <!-- Menu button -->
+        <div type="button" class="menu-btn">
+          <span class="burger--btn"></span>
+          <span class="burger--btn"></span>
+          <span class="burger--btn"></span>
+        </div>
+      </div>
+    </header>
     <!-- Product Hero -->
-    <div class="hero-1">
+    <section class="hero-1">
       <div class="hero-1__container">
         <div class="hero-1__grid">
           <div class="hero-1__body">
@@ -36,7 +63,147 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Circular Block -->
+    <section class="circular">
+      <div class="circular__container">
+        <div class="circular__grid circular__grid--top">
+          <!-- Circular Body -->
+          <div class="circular__body">
+            <a href="/" class="circular__link">
+              <svg class=" icon circular__icon">
+                <use xlink:href="./icons/sprite-2.svg#cookieyes"></use>
+              </svg>
+            </a>
+            <p class="circular__title circular__title--one">
+              Build brand trust and minimize legal risks with the market-leading
+              consent management platform that helps businesses comply with
+              global privacy regulations. Display cookie consent banners, manage
+              consent, generate policy documents and privacy-proof websites with
+              CookieYes.</p>
+            <!-- <br> -->
+            <p class="circular__title circular__title--two">
+              CookieYes is the #1 cookie compliance technology with over 1.2
+              million user base, powering global brands to startups across US,
+              UK and Europe.
+            </p>
+            <a href="product.html" class="btn btn--primary circular__btn">Visit
+              Cookieyes</a>
+          </div>
+          <!-- Circular Image   -->
+          <div class="circular__image">
+            <img src="./img/circular--1.png" alt="Circular Image">
+          </div>
+        </div>
+        <!-- Second Grid -->
+        <div class="circular__grid circular__grid--bottom">
+          <!-- Circular Body -->
+          <div class="circular__body">
+            <a href="/" class="circular__link">
+              <svg class=" icon circular__icon">
+                <use xlink:href="./icons/sprite-2.svg#webtoffee"></use>
+              </svg>
+            </a>
+            <p class="circular__title circular__title--one">
+              Build brand trust and minimize legal risks with the market-leading
+              consent management platform that helps businesses comply with
+              global privacy regulations. Display cookie consent banners, manage
+              consent, generate policy documents and privacy-proof websites with
+              CookieYes.</p>
+            <!-- <br> -->
+            <p class="circular__title circular__title--two">
+              CookieYes is the #1 cookie compliance technology with over 1.2
+              million user base, powering global brands to startups across US,
+              UK and Europe.
+            </p>
+            <a href="product.html" class="btn btn--primary circular__btn">Visit
+              Webtoffee</a>
+          </div>
+          <!-- Circular Image   -->
+          <div class="circular__image circular__image--bottom">
+            <img src="./img/circular--2.svg" alt="Circular Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Remarkable Section -->
+    <section class="remarkable">
+      <div class="remarkable__container">
+        <div class="remarkable__grid">
+          <h5 class="remarkable__head">Want to know how we build products for
+            the
+            future?</h5>
+          <p class="remarkable__title">Then be a part of our remarkable journey
+            and let's learn together!</p>
+          <!-- Remarkable Btn -->
+          <div class="remarkable__buttons">
+            <button class="btn btn--primary remarkable__btn active">About us</button>
+            <button class="btn btn--primary">Join the team</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Footer Logo -->
+        <section class="footer__logo col-5-tablet col-4-laptop">
+          <a href="index.html">
+            <svg class="footer__icon icon">
+              <use xlink:href="./icons/sprite-2.svg#logofooter"></use>
+            </svg>
+          </a>
+          <p class="footer__text">Mozil builds extensions, plugins and apps to
+            simplify work for businesses. </p>
+        </section>
+        <!-- list -->
+        <section class="footer__header">
+          <div class="footer__header--casket">
+            <div class="footer__header--col col-4-tablet col-3-laptop">
+              <button class="footer__col--head ">Production</button>
+              <ul role="list" class="footer__header--nav content">
+                <li class="footer__item"><a href="/" class="footer__link">CookieYes</a></li>
+                <li class="footer__item"><a href="/" class="footer__link">Webtoffee</a></li>
+              </ul>
+            </div>
+            <div class="footer__header--col col-3-tablet col-2-laptop">
+              <button class="footer__col--head">About</button>
+              <ul role="list" class="footer__header--nav">
+                <li class="footer__item"><a href="/" class="footer__link">About
+                    Us</a></li>
+                <li class="footer__item"><a href="/" class="footer__link">Career</a></li>
+                <li class="footer__item"><a href="/" class="footer__link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__header--col col-3-tablet col-3-laptop">
+              <button class="footer__col--head">Follow us</button>
+              <ul role="list" class="footer__header--nav nav--follow">
+                <li class="footer__item"><a href="/" class="footer__link"><span
+                      class="fa-brands fa-facebook-f"></span></a></li>
+                <li class="footer__item"><a href="/" class="footer__link"><span
+                      class="fa-brands fa-twitter"></span></a></li>
+                <li class="footer__item"><a href="/" class="footer__link"><span
+                      class="fa-brands fa-instagram"></span></a></li>
+                <li class="footer__item linkedin--in"><a href="/"
+                    class="footer__link"><span
+                      class="fa-brands fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Footer Bottom -->
+      <section class="footer__bottom">
+        <div class="bottom__container">
+          <div class="footer__casket">
+            <p>&#9400; 2022 Mozi - All
+              right
+              reserved</p>
+            <a class="footer__bottom--link" href="/">Terms &amp; Conditions </a>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script type="module" src="/src/js/app.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"

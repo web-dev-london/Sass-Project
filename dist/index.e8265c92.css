@@ -283,15 +283,21 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
 }
 
 @media (min-width: 1024px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
   h1 {
     font-size: 4.8rem;
   }
@@ -1244,7 +1250,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero-1 {
   background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
-  padding-top: 3rem;
+  margin-bottom: 5rem;
+  padding-top: 9rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-1 {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-1 {
+    margin-bottom: 10rem;
+  }
 }
 
 .hero-1__grid {
@@ -1302,6 +1321,191 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero-1__image {
   max-width: 67.2rem;
+}
+
+.circular {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .circular {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circular {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .circular {
+    margin-bottom: 10rem;
+  }
+}
+
+.circular__grid {
+  gap: 2rem 5rem;
+}
+
+@media (min-width: 768px) {
+  .circular__grid {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+
+.circular__grid--top {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .circular__grid--top {
+    margin-bottom: 10rem;
+  }
+}
+
+.circular__grid--bottom {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .circular__image--bottom {
+    order: -1;
+  }
+}
+
+.circular__body {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .circular__body {
+    text-align: start;
+  }
+}
+
+.circular__icon {
+  width: 20rem;
+  height: 4.6rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .circular__icon {
+    width: 22rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circular__icon {
+    width: 24rem;
+  }
+}
+
+.circular__title {
+  color: #484c63;
+}
+
+.circular__title--two {
+  margin-bottom: 4rem;
+}
+
+.circular__image {
+  max-width: 56.4rem;
+  height: auto;
+}
+
+.circular__btn {
+  margin-bottom: 3rem;
+  transition: all .3s ease-in-out .1s;
+}
+
+@media (min-width: 768px) {
+  .circular__btn {
+    margin-bottom: 0;
+  }
+}
+
+.circular__btn:hover {
+  color: #fff;
+  background: #bf0830;
+}
+
+.remarkable {
+  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .remarkable {
+    padding: 7rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .remarkable {
+    padding: 10rem 0;
+  }
+}
+
+.remarkable__container {
+  text-align: center;
+}
+
+@media (min-width: 425px) {
+  .remarkable__grid {
+    place-items: center;
+  }
+}
+
+.remarkable__head {
+  color: #1a2578;
+}
+
+@media (min-width: 768px) {
+  .remarkable__head {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .remarkable__head {
+    max-width: 50rem;
+  }
+}
+
+.remarkable__title {
+  color: #484c63;
+  margin-bottom: 3rem;
+}
+
+.remarkable__buttons {
+  flex-flow: column wrap;
+  display: flex;
+}
+
+@media (min-width: 375px) {
+  .remarkable__buttons {
+    flex-flow: row;
+    column-gap: 1.6rem;
+  }
+}
+
+.remarkable__buttons > .active {
+  color: #fff;
+  background: #bf0830;
+}
+
+.remarkable__btn {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 375px) {
+  .remarkable__btn {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=index.e8265c92.css.map */
