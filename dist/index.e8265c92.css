@@ -519,6 +519,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.bg--color {
+  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
+}
+
 .footer {
   background: #0d123c;
 }
@@ -813,10 +817,6 @@ h1, h2, h3, h4, h5, h6, p {
   .card__btn:before {
     left: 3%;
   }
-}
-
-.header {
-  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
 }
 
 .header__container {
@@ -1182,7 +1182,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero {
-  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
   padding-top: 7.3rem;
 }
 
@@ -1249,7 +1248,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-1 {
-  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
   margin-bottom: 5rem;
   padding-top: 9rem;
 }
@@ -1505,6 +1503,378 @@ h1, h2, h3, h4, h5, h6, p {
 @media (min-width: 375px) {
   .remarkable__btn {
     margin-bottom: 0;
+  }
+}
+
+.miniature--cards {
+  margin-bottom: 8.3rem;
+}
+
+.miniature--cards__grid {
+  justify-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .miniature--cards__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .miniature--cards__grid {
+    gap: 0;
+  }
+}
+
+.miniature--cards__card {
+  width: 100%;
+  max-width: 31.6rem;
+  min-height: 31.8rem;
+  border-radius: 8px;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 53px;
+  display: flex;
+  position: relative;
+  box-shadow: 2px 2px 10px #88878766;
+}
+
+.miniature--cards__card > img {
+  position: absolute;
+  bottom: 0;
+}
+
+.miniature--cards__num {
+  color: #1a2578;
+  font-size: 5.6rem;
+  font-weight: 700;
+}
+
+.miniature--cards__title {
+  color: #484c63;
+}
+
+.showcase {
+  background: linear-gradient(252.91deg, #e3e7f6bf 3.68%, #e3e7f61a 97.82%);
+  padding-top: 6.5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .showcase {
+    padding-bottom: 9rem;
+  }
+}
+
+.showcase__container {
+  overflow: hidden;
+}
+
+.showcase__grid {
+  place-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .showcase__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.showcase__description {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .showcase__description {
+    text-align: start;
+  }
+}
+
+.showcase__head {
+  color: #1a2578;
+}
+
+.showcase__subtitle, .showcase__subtitle ~ p {
+  color: #484c63;
+}
+
+.showcase__img {
+  width: 100%;
+  max-width: 60.7rem;
+  min-height: 28rem;
+  position: relative;
+}
+
+@media (min-width: 375px) {
+  .showcase__img {
+    min-height: 32rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .showcase__img {
+    min-height: 37rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase__img {
+    min-height: 48rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .showcase__img {
+    min-height: 50.5rem;
+  }
+}
+
+.showcase__img--frame {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+.showcase__img--picture {
+  z-index: 1;
+  max-width: 490px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.showcase--card {
+  margin-bottom: 7rem;
+}
+
+@media (min-width: 768px) {
+  .showcase--card {
+    margin-bottom: 10rem;
+  }
+}
+
+.showcase--card__grid {
+  place-items: center;
+  row-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .showcase--card__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase--card__grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .showcase--card__grid {
+    gap: 3rem;
+  }
+}
+
+.showcase--card__inner {
+  max-width: 345px;
+  min-height: 278px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.card--inner {
+  padding: 2rem;
+  box-shadow: 1px 1px 10px #88878749;
+}
+
+@media (min-width: 768px) {
+  .card--inner {
+    padding: 4rem 2rem;
+  }
+}
+
+.card--inner__head {
+  color: #3a3a3c;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .card--inner__head {
+    font-size: 2.8rem;
+  }
+}
+
+.card--inner__subtitle {
+  color: #484c63;
+}
+
+.showcase {
+  margin-bottom: 7rem;
+}
+
+@media (min-width: 768px) {
+  .showcase {
+    margin-bottom: 10rem;
+  }
+}
+
+.showcase__header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .showcase__header {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase__header {
+    margin-bottom: 9.5rem;
+  }
+}
+
+.showcase__subject {
+  color: #1a2578;
+}
+
+.showcase__desc {
+  color: #484c63;
+}
+
+.plan {
+  margin-bottom: 5rem;
+}
+
+.plan__grid {
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .plan__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan__grid {
+    place-items: center;
+    column-gap: 3rem;
+  }
+}
+
+.plan__body {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .plan__body {
+    text-align: justify;
+  }
+}
+
+.plan__subject {
+  color: #1a2578;
+}
+
+.plan__title {
+  color: #484c63;
+}
+
+.plan__image {
+  max-width: 56rem;
+  width: 100%;
+  min-height: 35rem;
+  position: relative;
+}
+
+@media (min-width: 375px) {
+  .plan__image {
+    min-height: 40rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .plan__image {
+    min-height: 45rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .plan__image {
+    min-height: 43rem;
+    order: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan__image {
+    min-height: 54.8rem;
+  }
+}
+
+.plan__picture {
+  z-index: 1;
+  border-radius: 8px;
+  position: relative;
+}
+
+.plan__frame--image {
+  position: absolute;
+  top: -1.3rem;
+  left: -1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .plan__frame--image {
+    top: -2rem;
+    left: -1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan__frame--image {
+    left: -3rem;
+  }
+}
+
+.lucky {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+
+.lucky__grid {
+  row-gap: 8rem;
+}
+
+.lucky__body {
+  position: relative;
+}
+
+.lucky__icon {
+  width: 15rem;
+  height: 5.8rem;
+  position: absolute;
+  bottom: -6rem;
+  left: 14rem;
+}
+
+@media (min-width: 768px) {
+  .lucky__icon {
+    width: 19rem;
+    left: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lucky__icon {
+    width: 21.1rem;
   }
 }
 

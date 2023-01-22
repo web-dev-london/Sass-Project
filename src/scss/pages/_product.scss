@@ -3,7 +3,7 @@
 @use '../layouts' as *;
 
 .hero-1 {
-  background: $bg-color;
+  // background: $bg-color;
   padding-top: 9rem;
   margin-bottom: 5rem;
   @include laptop {

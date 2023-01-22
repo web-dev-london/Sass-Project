@@ -8,6 +8,7 @@
 @use './components/circular';
 @use './components/burgericon';
 @use './components/brandsicon';
+@use './components/bg__color';
 
 // Abstracts
 @use './abstracts/variables';
@@ -30,3 +31,4 @@
 
 // Pages
 @use './pages/product';
+@use './pages/about';
