@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"7ZoMj":[function(require,module,exports) {
+})({"1dG02":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "d7fe96c059a40e7a";
+module.bundle.HMR_BUNDLE_ID = "0ccbaff27a04d9d8";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -531,57 +531,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"8lRBv":[function(require,module,exports) {
-// Progress Bar
-const progressBar = document.querySelector(".circular__progress");
-const circleValue = document.querySelector(".circular__value");
-let progressValue = 0;
-let progressEndValue = 95;
-let speed = 175;
-let progress = setInterval(()=>{
-    progressValue++;
-    circleValue.textContent = `${progressValue}%`;
-    progressBar.style.background = `conic-gradient(
-    #0daa41 ${progressValue * 3.6}deg,
-    #cde0db ${progressValue * 3.6}deg
-  )`;
-    if (progressValue == progressEndValue) clearInterval(progress);
-}, speed);
-/* Menu Button  */ const menuBtn = document.querySelector(".menu-btn");
-const nav = document.querySelector(".nav");
-const navList = document.querySelector(".nav__list");
-const navItems = Array.from(document.querySelectorAll(".nav__item"));
-let menuOpen = false;
-menuBtn.addEventListener("click", ()=>{
-    if (!menuOpen) {
-        menuBtn.classList.add("open");
-        nav.classList.add("open");
-        navList.classList.add("open");
-        navItems.forEach((item)=>{
-            return item.classList.add("open");
-        });
-        menuOpen = true;
-    } else {
-        menuBtn.classList.remove("open");
-        nav.classList.remove("open");
-        navList.classList.remove("open");
-        navItems.forEach((item)=>{
-            return item.classList.remove("open");
-        });
-        menuOpen = false;
-    }
-});
-/* Footer Collapsible */ const collapse = Array.from(document.querySelectorAll(".footer__header--col"));
-collapse.forEach((items)=>{
-    items.addEventListener("click", function() {
-        this.classList.toggle("active");
-    });
-}); // const acc = document.querySelector('.acc');
- // const content = document.querySelector('.content');
- // acc.onclick = function () {
- //   content.classList.toggle('active');
- // };
+},{}],"fcXcC":[function(require,module,exports) {
 
-},{}]},["7ZoMj","8lRBv"], "8lRBv", "parcelRequireb091")
+},{}]},["1dG02","fcXcC"], "fcXcC", "parcelRequireb091")
 
-//# sourceMappingURL=index.59a40e7a.js.map
+//# sourceMappingURL=career.7a04d9d8.js.map

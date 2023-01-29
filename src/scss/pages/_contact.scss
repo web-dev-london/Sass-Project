@@ -1,0 +1,164 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../layouts' as *;
+
+.contacts {
+  background: $white-color;
+  margin: 7rem 0;
+  @include tablet {
+    margin: 9rem 0;
+  }
+  @include laptop {
+    margin: 11rem 0;
+  }
+  @include laptopX {
+    margin: 15rem 0;
+  }
+  // .contacts__container
+
+  &__container {
+  }
+
+  // .contacts__grid
+
+  &__grid {
+    row-gap: 5rem;
+    @include tablet {
+      row-gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // .contacts__details
+
+  &__details {
+    order: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 53.9rem;
+    padding: 3rem;
+    border: none;
+    border-radius: $card-radius;
+    box-shadow: 1px 1px 5px rgba(139, 139, 129, 0.3);
+    // margin-bottom: 5rem;
+    @include tablet {
+      margin-bottom: 0;
+      order: -1;
+    }
+  }
+
+  // .contacts__form
+
+  &__form {
+  }
+
+  &__form--name,
+  &__form--email,
+  &__form--subject,
+  &__form--textarea {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 3rem;
+    & > label {
+      color: #8f90a6;
+    }
+    & > input {
+      padding: 1rem 2rem;
+      border: 1px solid #e3e7f6;
+      border-radius: $btn-radius;
+    }
+  }
+
+  // .contacts__form--name
+
+  &__form--name {
+  }
+
+  // .contacts__form--email
+
+  &__form--email {
+  }
+
+  // .contacts__form--subject
+
+  &__form--subject {
+  }
+
+  // .contacts__form--textarea
+
+  &__form--textarea {
+    & > textarea {
+      resize: none;
+      border: 1px solid #e3e7f6;
+      border-radius: $btn-radius;
+      min-height: 13.8rem;
+    }
+  }
+
+  // .contacts__form--btn
+
+  &__form--btn {
+    background: $primary-color;
+    color: $white-color;
+  }
+
+  // .contacts__places
+
+  &__places {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 3rem;
+    @include tablet {
+      row-gap: 0;
+      margin-top: auto;
+    }
+  }
+
+  // .contacts__places--country
+
+  &__places--country {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    align-items: center;
+    @include tablet {
+      margin-left: auto;
+      display: block;
+      text-align: justify;
+      &:not(:last-of-type) {
+        margin-bottom: 5rem;
+        @include laptop {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+  }
+
+  //.contacts__places--flag
+
+  &__places--flag {
+    display: flex;
+    margin-bottom: 1rem;
+    @include tablet {
+      margin-bottom: 1.2rem;
+    }
+  }
+  // .contacts__places--city
+
+  &__places--city {
+    margin-left: 2rem;
+    font-weight: weight(bold);
+    font-size: 1.8rem;
+    @include laptop {
+      font-size: 2rem;
+    }
+  }
+
+  // .contacts__places--title
+
+  &__places--title {
+    max-width: 27.5rem;
+    margin-bottom: 0;
+  }
+}

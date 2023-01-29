@@ -1,13 +1,22 @@
 @use '../abstracts' as *;
+@use '../layouts' as *;
 
 .circular__progress {
   position: relative;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   background-color: $neutral-color;
   display: grid;
   place-items: center;
+  @include tablet {
+    width: 100px;
+    height: 100px;
+  }
+  @include laptop {
+    width: 110px;
+    height: 110px;
+  }
 }
 .circular__progress::before {
   content: '';

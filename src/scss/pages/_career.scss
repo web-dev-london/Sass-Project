@@ -1,0 +1,484 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../layouts' as *;
+
+.hero__red {
+  color: $primary-color;
+  font-weight: weight(medium);
+}
+
+.offer {
+  margin-bottom: 5rem;
+
+  // .offer__header
+
+  &__header {
+    margin-bottom: 5rem;
+    text-align: center;
+    @include tablet {
+      margin-bottom: 8rem;
+    }
+    @include laptopX {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // .offer__subject
+
+  &__subject {
+    color: $secondary-color;
+  }
+
+  // .offer__title
+
+  &__title {
+    color: $text-color;
+  }
+
+  //.offer__ikon
+  &__ikon {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 3.8rem;
+    & > span {
+      color: #3a3a3c;
+      text-transform: capitalize;
+      margin-left: 2rem;
+      font-size: 2.8rem;
+    }
+  }
+
+  // .offer__icon
+
+  &__icon {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+}
+.offer--cards {
+  // .offer--cards__grid
+
+  &__grid {
+    place-items: center;
+    row-gap: 3rem;
+    @include tablet {
+      row-gap: 2.4rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include laptop {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+  }
+
+  // .offer--cards__card
+
+  &__card {
+    border: none;
+    border-radius: $card-radius;
+    box-shadow: 1px 1px 5px rgba(139, 139, 100, 0.3);
+    max-width: 345px;
+    min-height: 264px;
+    padding: 4rem;
+    & > p {
+      color: $text-color;
+    }
+  }
+}
+
+/* Team Section */
+
+.team {
+  margin-bottom: 6rem;
+  padding: 6rem 0;
+  background: $bg-color;
+  // @include tablet {
+  //   margin-bottom: 8rem;
+  // }
+  // @include laptopX {
+  //   margin-bottom: 10rem;
+  // }
+  // .team__container
+
+  &__container {
+    overflow: hidden;
+  }
+
+  // .team__grid
+
+  &__grid {
+    // place-items: center;
+    gap: 2rem;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  //.team__content
+
+  &__content {
+    text-align: center;
+    @include tablet {
+      text-align: justify;
+      align-self: center;
+    }
+  }
+
+  // .team__heading
+  &__heading {
+    color: $secondary-color;
+  }
+
+  //.team__title
+
+  &__title {
+    color: $text-color;
+  }
+  // .team__pic--1
+
+  &__pic--1 {
+    max-width: 53.6rem;
+    // min-height: 42rem;
+  }
+
+  // .team__pic--2
+
+  &__pic--2 {
+    max-width: 54.4rem;
+    // min-height: 36.5rem;
+  }
+
+  // .team__pic--3
+
+  &__pic--3 {
+    max-width: 55.3rem;
+    // min-height: 44.1rem;
+  }
+
+  // .team__pic--4
+
+  &__pic--4 {
+    max-width: 54.1rem;
+    // min-height: 34rem;
+  }
+
+  // .team__pic--5
+
+  &__pic--5 {
+    max-width: 53.6rem;
+    align-self: end;
+    // min-height: 27.5rem;
+  }
+}
+
+img.team__img {
+  border-radius: $card-radius;
+}
+
+/* Progress Section */
+
+.progress {
+  background: $white-color;
+  margin-bottom: 5rem;
+
+  &__content {
+    border: none;
+    box-shadow: 1px 1px 10px rgba(139, 139, 129, 0.3);
+    border-radius: $card-radius;
+    padding: 2rem;
+    @include mobileXL {
+      padding: 4rem;
+    }
+    @include laptop {
+      padding: 3.5rem 7rem;
+    }
+  }
+
+  // .progress__grid
+
+  &__grid {
+    gap: 3rem;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // .progress__bar
+
+  &__bar {
+    display: flex;
+    align-items: center;
+  }
+
+  //.progress__circular
+
+  &__circular {
+    margin-bottom: 0;
+  }
+
+  // .progress__disc
+
+  &__disc {
+    font-size: 1.6rem;
+    font-weight: weight(bold);
+    margin-left: 2rem;
+    @include mobileX {
+      font-size: 2rem;
+    }
+    @include laptop {
+      font-size: 2.5rem;
+    }
+    @include laptopX {
+      font-size: 2.8rem;
+    }
+  }
+
+  // .progress__star
+
+  &__star {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      order: 1;
+    }
+  }
+
+  // .progress__icon
+
+  &__icon {
+    width: 15rem;
+    height: 3.6rem;
+    margin-bottom: 0.5rem;
+    @include tablet {
+      width: 18rem;
+    }
+  }
+
+  //.progress__stars--icons
+
+  &__stars--icons {
+    margin-bottom: 0.5rem;
+  }
+
+  // .progress__number
+
+  &__number {
+    font-weight: weight(bold);
+    font-size: 2.8rem;
+    @include tablet {
+      font-size: 3.2rem;
+    }
+    @include laptop {
+      font-size: 3.6rem;
+    }
+  }
+
+  //. porgress__link
+
+  &__link {
+    position: relative;
+    text-transform: capitalize;
+    color: #424b5a;
+    text-decoration: underline;
+    &::after {
+      position: absolute;
+      content: '\f061';
+      font-weight: 900;
+      font-family: 'Font Awesome 6 Free';
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.fa-star {
+  color: $lucky-color;
+  font-size: 2rem;
+  @include tablet {
+    font-size: 2.2rem;
+  }
+  @include laptop {
+    font-size: 2.6rem;
+  }
+}
+/* Developer Section */
+
+.developer {
+  // .developer__header
+
+  &__header {
+    text-align: center;
+    margin-bottom: 5rem;
+    @include tablet {
+      margin-bottom: 7rem;
+    }
+    @include laptopX {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // .developer__subject
+
+  &__subject {
+    color: $secondary-color;
+  }
+
+  // .developer__title
+
+  &__title {
+    color: $text-color;
+  }
+
+  // .developer__content
+
+  &__content {
+    margin-bottom: 4.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2rem;
+    @include tablet {
+      row-gap: 3rem;
+    }
+  }
+
+  // .developer__widget
+
+  &__widget {
+    padding: 2rem;
+    border: none;
+    box-shadow: 2px 1px 10px rgba(138, 138, 128, 0.2);
+    border-radius: $card-radius;
+    &:last-of-type {
+      margin-bottom: 2.5rem;
+      @include tablet {
+        margin-bottom: 3rem;
+      }
+      @include laptopX {
+        margin-bottom: 4.8rem;
+      }
+    }
+    @include mobileXL {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include tablet {
+      padding: 2.5rem 3rem;
+    }
+    @include laptop {
+      min-height: 14.8rem;
+      align-items: center;
+      padding: 0rem 5rem;
+    }
+  }
+
+  // .developer__map
+
+  &__map {
+    margin-bottom: 1rem;
+    @include mobileXL {
+      margin-bottom: 0;
+    }
+  }
+
+  // .developer__caption
+
+  &__caption {
+    font-size: 2rem;
+    color: $text-color;
+    @include tablet {
+      font-size: 2.3rem;
+    }
+    @include laptop {
+      font-size: 2.6rem;
+    }
+  }
+
+  // .developer__button
+
+  &__button {
+    padding: 0.8rem 1.5rem;
+    @include mobileXL {
+      align-self: center;
+    }
+    @include tablet {
+      padding: 1rem 1.8rem;
+    }
+    @include laptop {
+      padding: 1.3rem 2.4rem;
+    }
+  }
+}
+
+.fa-location-dot {
+  margin-left: 1.6rem;
+}
+
+.fa-location-dot,
+.fa-clock {
+  color: rgba(143, 144, 166, 0.3);
+}
+
+.india,
+.full-time {
+  color: #8f90a6;
+}
+
+.btn-seemore {
+  align-self: center;
+  padding: 0.8rem 1.5rem;
+
+  @include tablet {
+    padding: 1rem 1.8rem;
+  }
+  @include laptop {
+    padding: 1.3rem 2.4rem;
+  }
+}
+
+/* Join Section */
+
+.join {
+  background: $white-color;
+
+  // .join__content
+
+  &__content {
+    padding: 5rem 0;
+    text-align: center;
+    @include tablet {
+      padding: 7rem 0;
+    }
+    @include laptop {
+      padding: 9rem 0;
+    }
+    @include laptopX {
+      padding: 11.2rem 0;
+    }
+  }
+
+  // .join__subject
+
+  &__subject {
+    color: $secondary-color;
+    margin-bottom: 1.6rem;
+  }
+
+  // .join__title
+
+  &__title {
+    color: $text-color;
+    margin-bottom: 2.4rem;
+    @include tablet {
+      margin-bottom: 3rem;
+    }
+    @include laptop {
+      margin-bottom: 4rem;
+    }
+    @include laptopX {
+      margin-bottom: 5rem;
+    }
+  }
+}
